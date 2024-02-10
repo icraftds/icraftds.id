@@ -1,0 +1,23 @@
+{
+  "name": "company-profile",
+  "private": true,
+  "version": "0.0.0",
+  "type": "module",
+  "scripts": {
+    "dev": "vite",
+    "build": "vite build",
+    "preview": "vite preview"
+  },
+  "dependencies": {
+    "@studio-freight/react-lenis": "^0.0.43",
+    "clsx": "^2.1.0",
+    "framer-motion": "^11.0.3",
+    "preact": "^10.19.3",
+    "react-wrap-balancer": "^1.1.0"
+  },
+  "devDependencies": {
+    "@preact/preset-vite": "^2.8.1",
+    "unocss": "^0.58.5",
+    "vite": "^5.1.0"
+  }
+}
