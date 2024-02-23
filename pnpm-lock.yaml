@@ -5,6 +5,12 @@ settings:
   excludeLinksFromLockfile: false
 
 dependencies:
+  '@fontsource-variable/caveat':
+    specifier: ^5.0.16
+    version: 5.0.16
+  '@fontsource-variable/playfair-display':
+    specifier: ^5.0.21
+    version: 5.0.21
   '@studio-freight/react-lenis':
     specifier: ^0.0.43
     version: 0.0.43(react-dom@18.2.0)(react@18.2.0)
@@ -613,6 +619,14 @@ packages:
     requiresBuild: true
     dev: true
     optional: true
+
+  /@fontsource-variable/caveat@5.0.16:
+    resolution: {integrity: sha512-n+i5j2K1jQ09MxC0ISjj/9AgLeEpmduint1BuX1A49NkkR6jFSDxTOPMp48+QmY0yT5bwkuocjn39sRJ3+vfCA==}
+    dev: false
+
+  /@fontsource-variable/playfair-display@5.0.21:
+    resolution: {integrity: sha512-K3S3qpVpyenGazI2Ja9NPMsS/fm2veJjRUnZKIziklcaWIhEwcHW5v+ZuIDM/cBpVWb81iR2bJCdf8mR9CPBMQ==}
+    dev: false
 
   /@iconify/types@2.0.0:
     resolution: {integrity: sha512-+wluvCrRhXrhyOmRDJ3q8mux9JkKy5SJ/v8ol2tu4FVjyYvtEzkc/3pK15ET6RKg4b4w4BmTk1+gsCUhf21Ykg==}
