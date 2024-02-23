@@ -11,8 +11,7 @@
     },
     "moduleResolution": "bundler",
     "jsx": "react-jsx",
-    "jsxImportSource": "preact",
-    "checkJs": true
+    "jsxImportSource": "preact"
   },
   "exclude": ["node_modules"],
   "include": ["src"]
