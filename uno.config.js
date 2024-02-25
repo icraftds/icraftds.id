@@ -8,6 +8,7 @@ export default defineConfig({
     fontFamily: {
       handwriting: '"Caveat Variable", cursive',
       serif: '"Playfair Display Variable", serif',
+      sans: '"DM Sans Variable", sans-serif',
     }
   }
 })

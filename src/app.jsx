@@ -1,6 +1,7 @@
 import { LazyMotion } from 'framer-motion'
-import Hero from './components/Hero'
-import About from './layouts/About'
+import Hero from '@/components/Hero'
+import About from '@/layouts/About'
+import Footer from '@/layouts/Footer'
 
 const features = () => import('@/utils/framer').then((i) => i.default)
 
@@ -9,6 +10,7 @@ export default function App() {
     <LazyMotion features={features} strict>
       <Hero />
       <About />
+      <Footer />
     </LazyMotion>
   )
 }

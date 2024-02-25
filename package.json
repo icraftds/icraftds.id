@@ -10,6 +10,7 @@
   },
   "dependencies": {
     "@fontsource-variable/caveat": "^5.0.16",
+    "@fontsource-variable/dm-sans": "^5.0.3",
     "@fontsource-variable/playfair-display": "^5.0.21",
     "@studio-freight/react-lenis": "^0.0.43",
     "@unocss/reset": "^0.58.5",
