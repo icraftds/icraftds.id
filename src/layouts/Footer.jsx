@@ -1,10 +1,10 @@
 export default function Footer() {
   return (
-    <footer class="m-8 p-8 font-sans grid gap-8">
+    <footer class="m-8 p-16 font-sans grid gap-8">
       <img
         class="max-h-32"
         src="/icraft.png"
-        alt="Logo iCraft"
+        alt="Logo iCraft Digital Services"
       />
       <div class="grid grid-cols-4">
         <span class="text-lg fw-bold">Hubungi Kami</span>
