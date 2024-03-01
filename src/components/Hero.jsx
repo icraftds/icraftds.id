@@ -39,7 +39,7 @@ export default function Hero() {
         animate={{ opacity: 0.25 }}
         transition={{ delay: 1.5, duration: 2 }}
         src="/chevron-down.svg"
-        onClick={() => lenis.scrollTo('#about', { duration: 1.5, offset: -64 })}
+        onClick={() => lenis.scrollTo('#about', { duration: 1.5 })}
       />
     </div>
   )
