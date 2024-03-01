@@ -1,16 +1,15 @@
 import { m } from 'framer-motion'
 import Logo from "./Logo";
+import { useLenis } from '@studio-freight/react-lenis';
 
 export default function Hero() {
+  const lenis = useLenis()
+
   return (
-    <m.div
-      class="sticky top-0 h-[100svh] flex justify-center items-center bg-white"
-      animate={{ y: -96 }}
-      transition={{ delay: 1.5, stiffness: 10 }}
-    >
+    <div class="pb-16 h-[100svh] flex justify-center items-center bg-white">
       <m.div
         initial={{ scale: 2.5 }}
-        animate={{ scale: 1.5, x: -96 }}
+        animate={{ scale: 1.5, x: -96, y: -32 }}
         transition={{ delay: 1 }}
       >
         <Logo />
@@ -18,7 +17,7 @@ export default function Hero() {
       <m.div
         class="absolute text-[#6099aa]"
         initial={{ opacity: 0 }}
-        animate={{ opacity: 1, x: 48 }}
+        animate={{ opacity: 1, x: 48, y: -32 }}
         transition={{ delay: 1 }}
       >
         <h1 class="text-6xl">
@@ -30,17 +29,18 @@ export default function Hero() {
         initial={{ opacity: 0 }}
         animate={{ opacity: 1 }}
         transition={{ delay: 1 }}
-        class="font-handwriting absolute bottom-38 text-4xl"
+        class="font-handwriting absolute bottom-64 text-4xl"
       >
         Layanan IT solusi bisnis publik!
       </m.span>
       <m.img
-        class="absolute -bottom-8 w-16 animate-bounce"
+        class="absolute bottom-16 w-16 animate-bounce cursor-pointer"
         initial={{ opacity: 0 }}
         animate={{ opacity: 0.25 }}
         transition={{ delay: 1.5, duration: 2 }}
         src="/chevron-down.svg"
+        onClick={() => lenis.scrollTo('#about', { duration: 1.5 })}
       />
-    </m.div>
+    </div>
   )
 }
