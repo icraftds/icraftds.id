@@ -6,7 +6,7 @@ export default function Footer() {
         src="/icraft.png"
         alt="Logo iCraft Digital Services"
       />
-      <div class="grid grid-cols-4">
+      <div class="grid grid-cols-4 gap-2">
         <span class="text-lg fw-bold">Hubungi Kami</span>
         <ul class="flex gap-8 col-span-3">
           <li>
@@ -23,6 +23,14 @@ export default function Footer() {
               href="mail:icraft.ds@gmail.com"
             >
               icraft.ds@gmail.com
+            </a>
+          </li>
+          <li>
+            <a
+              class="b-b-1 b-transparent hover:b-black"
+              href="https://instagram.com/icraftds"
+            >
+              icraft.ds
             </a>
           </li>
         </ul>

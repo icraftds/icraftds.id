@@ -11,7 +11,7 @@ export default function Clients() {
   return (
     <section class="p-32 grid gap-16">
       <h1 class="font-sans fw-bold text-5xl text-center">Client Kami</h1>
-      <div class="flex flex-wrap justify-center gap-8">
+      <div class="flex flex-wrap justify-center gap-x-8 gap-y-16">
         { clients.map((client) => <Client {...client} />)}
       </div>
     </section>
