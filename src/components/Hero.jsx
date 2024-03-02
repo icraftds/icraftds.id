@@ -6,7 +6,10 @@ export default function Hero() {
   const lenis = useLenis()
 
   return (
-    <div class="pb-16 h-[100svh] flex justify-center items-center bg-white">
+    <section
+      id="top"
+      class="pb-16 h-[100svh] flex justify-center items-center bg-white"
+    >
       <m.div
         initial={{ scale: 2.5 }}
         animate={{ scale: 1.5, x: -96, y: -32 }}
@@ -41,6 +44,6 @@ export default function Hero() {
         src="/chevron-down.svg"
         onClick={() => lenis.scrollTo('#about', { duration: 1.5 })}
       />
-    </div>
+    </section>
   )
 }

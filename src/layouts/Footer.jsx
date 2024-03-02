@@ -1,4 +1,12 @@
+import { useLenis } from "@studio-freight/react-lenis"
+
 export default function Footer() {
+  const lenis = useLenis()
+  const scrollTop = (e) => {
+    e.preventDefault()
+    lenis.scrollTo('#top', { duration: 2 })
+  }
+
   return (
     <footer class="m-8 p-16 font-sans grid gap-8">
       <img
@@ -47,9 +55,18 @@ export default function Footer() {
         </ul>
       </div>
       <hr />
-      <p class="text-end text-sm italic">
-        <em>iCraft Digital Services &copy; 2024</em>
-      </p>
+      <div class="flex justify-between text-sm">
+        <a
+          class="underline"
+          href="#top"
+          onClick={scrollTop}
+        >
+          Scroll To Top
+        </a>
+        <p class="italic">
+          <em>iCraft Digital Services &copy; 2024</em>
+        </p>
+      </div>
     </footer>
   )
 }
