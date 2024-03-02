@@ -1,0 +1,6 @@
+::-webkit-scrollbar {
+  background: none;
+  appearance: unset;
+  width: 0;
+  height: 0;
+}

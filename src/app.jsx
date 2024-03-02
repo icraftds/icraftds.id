@@ -5,12 +5,14 @@ import Footer from '@/layouts/Footer'
 import Clients from './layouts/Clients'
 import Commitments from './layouts/Commitments'
 import Contact from './layouts/Contact'
+import Progress from './components/Progress'
 
 const features = () => import('@/utils/framer').then((i) => i.default)
 
 export default function App() {
   return (
     <LazyMotion features={features} strict>
+      <Progress />
       <Hero />
       <About />
       <Commitments />
