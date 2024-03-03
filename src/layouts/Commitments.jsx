@@ -31,15 +31,17 @@ export default function Commitments() {
   return (
     <section
       id="commitments"
-      class="mx-auto my-32 px-8 max-w-[92ch] grid grid-cols-8"
+      class="py-32 px-8 bg-gray-100"
     >
-      <aside class="col-span-3 flex flex-col gap-2 sticky top-[40svh] self-start">
-        <h2 class="font-serif fw-medium text-6xl">Pilar</h2>
-        <p class="italic">Our commitments</p>
-      </aside>
-      <ol class="col-span-5 flex flex-col gap-6">
-        { commitments.map((e, i) => <Commitment key={i} i={i+1} {...e} />)}
-      </ol>
+      <div class="mx-auto max-w-4xl grid grid-cols-8">
+        <aside class="col-span-3 flex flex-col gap-2 sticky top-[40svh] self-start">
+          <h2 class="font-serif fw-medium text-6xl">Pilar</h2>
+          <p class="italic">Our commitments</p>
+        </aside>
+        <ol class="col-span-5 flex flex-col gap-6">
+          { commitments.map((e, i) => <Commitment key={i} i={i+1} {...e} />)}
+        </ol>
+      </div>
     </section>
   )
 }

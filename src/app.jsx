@@ -6,6 +6,7 @@ import Clients from './layouts/Clients'
 import Commitments from './layouts/Commitments'
 import Contact from './layouts/Contact'
 import Progress from './components/Progress'
+import Projects from './layouts/Projects'
 
 const features = () => import('@/utils/framer').then((i) => i.default)
 
@@ -17,6 +18,7 @@ export default function App() {
       <About />
       <Commitments />
       <Clients />
+      <Projects />
       <Contact />
       <Footer />
     </LazyMotion>

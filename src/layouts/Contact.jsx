@@ -2,7 +2,7 @@ import Link from "@/components/Link";
 
 export default function Contact() {
   return (
-    <section class="mx-auto my-16 px-8 max-w-[92ch]">
+    <section class="mx-auto my-32 px-8 max-w-4xl">
       <div class="p-16 bg-black text-gray-100 text-center grid gap-8 rounded-lt-xl rounded-rb-xl">
         <h2 class="text-4xl fw-medium">HUBUNGI KAMI</h2>
         <p class="text-xl">
