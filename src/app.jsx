@@ -19,7 +19,6 @@ export default function App() {
       <Commitments />
       <Clients />
       <Projects />
-      <Contact />
       <Footer />
     </LazyMotion>
   )

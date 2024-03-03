@@ -9,7 +9,7 @@ export default function Progress() {
 
   return (
     <m.div
-      class="fixed right-0 top-0 bottom-0 bg-black pl-2 m-1"
+      class="fixed right-0 top-0 bottom-0 bg-black pl-2 m-1 backdrop-invert mix-blend-difference"
       style={{ scaleY: spring }}
       onClick={onClick}
     />
