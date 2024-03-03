@@ -4,8 +4,8 @@ export default function Contact() {
   return (
     <section class="mx-auto my-16 px-8 max-w-[92ch]">
       <div class="p-16 bg-black text-gray-100 text-center grid gap-8 rounded-lt-xl rounded-rb-xl">
-        <h2 class="font-sans text-4xl fw-medium">HUBUNGI KAMI</h2>
-        <p class="font-sans text-xl">
+        <h2 class="text-4xl fw-medium">HUBUNGI KAMI</h2>
+        <p class="text-xl">
           Diskusikan alur kerja sistem yang ingin Anda buat, lalu kami akan
           memberikan solusi yang dapat Anda terima.
         </p>

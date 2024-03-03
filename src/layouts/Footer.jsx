@@ -8,7 +8,7 @@ export default function Footer() {
   }
 
   return (
-    <footer class="m-8 mt-32 p-16 font-sans grid gap-8">
+    <footer class="m-8 mt-32 p-16 grid gap-8">
       <img
         class="max-h-32"
         src="/icraft.png"

@@ -2,10 +2,10 @@ import clsx from "clsx";
 
 export default function Client({ src, name, url }) {
   return (
-    <div class="relative group font-sans italic">
+    <div class="relative group italic">
       <img
         class="m-2 h-24 w-64 object-contain select-none"
-        src={src}
+        src={`./clients/${src}`}
         alt={`Logo ${name}`}
       />
       <a
