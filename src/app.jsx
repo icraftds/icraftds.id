@@ -4,7 +4,6 @@ import About from '@/layouts/About'
 import Footer from '@/layouts/Footer'
 import Clients from './layouts/Clients'
 import Commitments from './layouts/Commitments'
-import Contact from './layouts/Contact'
 import Progress from './components/Progress'
 import Projects from './layouts/Projects'
 
