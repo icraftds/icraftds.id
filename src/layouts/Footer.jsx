@@ -1,10 +1,15 @@
 import { useLenis } from "@studio-freight/react-lenis"
+import clsx from "clsx"
 
 function Link({ children, href }) {
   return (
-    <li class="group">
+    <li class="group py-4 md:py-0">
       <a
-        class="text-2xl underline underline-1 underline-offset-2 px-8 b-r-2 group-last:b-r-0"
+        class={clsx(
+          "px-8 py-4 b-r-0 b-b-2 text-2xl underline-0 underline-offset-2",
+          "group-last:(b-r-0 b-b-0)",
+          "md:(py-0 b-r-2 b-b-0 underline underline-1)"
+        )}
         href={href}
       >
         { children }
@@ -21,18 +26,23 @@ export default function Footer() {
   }
 
   return (
-    <footer class="px-32 py-16 grid gap-8 bg-black text-gray-100 text-center">
-      <h2 class="text-4xl fw-bold">HUBUNGI KAMI</h2>
-      <p class="mx-auto text-xl max-w-2xl">
+    <footer
+      class={clsx(
+        "px-8 py-16 grid gap-8 bg-black text-(gray-100 center)",
+        "sm:(px-16)"
+      )}
+    >
+      <h2 class="text-3xl sm:text-4xl fw-bold">HUBUNGI KAMI</h2>
+      <p class="mx-auto text-lg max-w-2xl md:(text-xl)">
         Diskusikan alur kerja sistem yang ingin Anda buat, lalu kami akan
         memberikan solusi yang dapat Anda terima.
       </p>
-      <ul class="mx-auto flex">
+      <ul class="mx-auto flex flex-col md:flex-row gap-0">
         <Link href="https://wa.me/6285174264123">WhatsApp</Link>
         <Link href="https://instagram.com/icraft.ds">Instagram</Link>
         <Link href="mailto:icraft.digitals@gmail.com">Email</Link>
       </ul>
-      <div class="mx-auto text-sm">
+      <div class="mx-auto text-sm max-w-md">
         <p class="fw-medium">Alamat Kantor</p>
         <a
           class="underline underline-1 underline-offset-2"
