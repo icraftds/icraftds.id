@@ -13,7 +13,7 @@ export default function Logo() {
 
   return (
     <svg
-      class="w-64 h-64"
+      class="w-48 h-48 sm:(w-64 h-64)"
       viewBox="0 -60 60.438 285.85"
       xmlns="http://www.w3.org/2000/svg"
     >

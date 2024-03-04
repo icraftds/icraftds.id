@@ -42,10 +42,10 @@ export default function Footer() {
         <Link href="https://instagram.com/icraft.ds">Instagram</Link>
         <Link href="mailto:icraft.digitals@gmail.com">Email</Link>
       </ul>
-      <div class="mx-auto text-sm max-w-md">
-        <p class="fw-medium">Alamat Kantor</p>
+      <div class="mx-auto max-w-md">
+        <p class="fw-medium text-sm sm:text-base">Alamat Kantor</p>
         <a
-          class="underline underline-1 underline-offset-2"
+          class="underline underline-1 underline-offset-2 text-xs sm:text-sm"
           href="https://maps.app.goo.gl/k2oQJEFWfAhYGYff7"
         >
           Jl. Mitra Sejati Raya C2 No.6, Cinunuk, Kec. Cileunyi,
@@ -53,7 +53,7 @@ export default function Footer() {
         </a>
       </div>
       <hr class="my-4" />
-      <div class="flex justify-between text-sm">
+      <div class="flex justify-between text-xs sm:text-sm">
         <p class="italic">
           <em>iCraft Digital Services &copy; 2024</em>
         </p>

@@ -18,26 +18,26 @@ export default function Hero() {
         <Logo />
       </m.div>
       <m.div
-        class="absolute text-[#6099aa]"
+        class="absolute mr-4 sm:mr-0 text-[#6099aa]"
         initial={{ opacity: 0 }}
         animate={{ opacity: 1, x: 48, y: -32 }}
         transition={{ delay: 1 }}
       >
-        <h1 class="text-6xl">
+        <h1 class="text-5xl sm:text-6xl">
           <span class="font-serif">i</span>Craft
         </h1>
-        <h2 class="font-mono fw-thin text-xl">Digital Services</h2>
+        <h2 class="font-mono fw-thin text-lg sm:text-xl">Digital Services</h2>
       </m.div>
-      <m.span
+      <m.h2
         initial={{ opacity: 0 }}
         animate={{ opacity: 1 }}
         transition={{ delay: 1 }}
-        class="font-handwriting absolute bottom-64 text-4xl"
+        class="mx-8 text-center font-handwriting absolute bottom-64 text-3xl sm:text-4xl"
       >
         Layanan IT solusi bisnis publik!
-      </m.span>
+      </m.h2>
       <m.img
-        class="absolute bottom-16 w-16 animate-bounce cursor-pointer"
+        class="absolute bottom-16 w-12 sm:w-16 animate-bounce cursor-pointer"
         initial={{ opacity: 0 }}
         animate={{ opacity: 0.25 }}
         transition={{ delay: 1.5, duration: 2 }}
