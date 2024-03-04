@@ -1,4 +1,5 @@
 import Client from '@/components/Client'
+import clsx from 'clsx'
 
 export default function Clients() {
   const clients = [
@@ -10,9 +11,14 @@ export default function Clients() {
   ]
 
   return (
-    <section class="p-32 grid gap-16">
-      <h2 class="fw-bold text-5xl text-center">Client Kami</h2>
-      <div class="flex flex-wrap justify-center gap-x-8 gap-y-16">
+    <section class="px-8 py-16 sm:(px-16 py-32 gap-16) md:px-32 grid gap-8">
+      <h2 class="fw-bold text-4xl md:text-5xl text-center">Client Kami</h2>
+      <div
+        class={clsx(
+          "flex flex-wrap flex-col items-center justify-center gap-4",
+          "sm:(flex-row gap-8) md:gap-16"
+        )}
+      >
         { clients.map((client) => <Client {...client} />)}
       </div>
     </section>
