@@ -25,7 +25,7 @@ export default function Projects() {
   ]
 
   return (
-    <section class="px-8 py-32 bg-gray-100">
+    <section class="px-8 pt-32 pb-48 bg-gray-100">
       <div class="mx-auto max-w-6xl grid gap-16">
         <h2 class="fw-bold text-6xl">Proyek</h2>
         <ul class="grid grid-cols-2 gap-8">
