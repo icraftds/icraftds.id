@@ -1,6 +1,6 @@
 export default function Project({ i, name, src, desc }) {
   return (
-    <li class="list-none even:mt-16 even:-mb-16">
+    <li class="list-none md:even:mt-16 md:even:-mb-16">
       <div class="bg-white rounded shadow-lg">
         <h3 class="px-8 py-4 flex justify-between">
           <span>{ `${i}`.padStart(2, '0') }</span>
@@ -12,7 +12,7 @@ export default function Project({ i, name, src, desc }) {
           alt={`${name} screenshot`}
         />
         <p
-          class="px-8 py-4 fw-medium text-center text-lg"
+          class="px-8 py-4 fw-medium text-center text-sm sm:text-base lg:text-lg"
           children={desc}
         />
       </div>

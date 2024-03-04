@@ -25,10 +25,10 @@ export default function Projects() {
   ]
 
   return (
-    <section class="px-8 pt-32 pb-48 bg-gray-100">
-      <div class="mx-auto max-w-6xl grid gap-16">
-        <h2 class="fw-bold text-6xl">Proyek</h2>
-        <ul class="grid grid-cols-2 gap-8">
+    <section class="px-8 py-16 pb-32 sm:(pt-32 pb-48) bg-gray-100">
+      <div class="mx-auto max-w-md md:max-w-6xl grid gap-16">
+        <h2 class="fw-bold text-5xl md:text-6xl">Proyek</h2>
+        <ul class="grid grid-cols-1 md:grid-cols-2 gap-8">
           { projects.map((project, i) => <Project key={i} i={i+1} {...project} />)}
         </ul>
       </div>
