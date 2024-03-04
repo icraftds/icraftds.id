@@ -15,7 +15,6 @@ export default function Client({ src, name, url }) {
           'group-hover:opacity-100 group-hover:translate-y-0'
         )}
         href={url && 'https://' + url}
-        target="_blank"
       >
         { name }
       </a>

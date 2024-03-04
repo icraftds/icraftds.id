@@ -1,5 +1,17 @@
-import Link from "@/components/Link"
 import { useLenis } from "@studio-freight/react-lenis"
+
+function Link({ children, href }) {
+  return (
+    <li class="group">
+      <a
+        class="text-2xl underline underline-1 underline-offset-2 px-8 b-r-2 group-last:b-r-0"
+        href={href}
+      >
+        { children }
+      </a>
+    </li>
+  )
+}
 
 export default function Footer() {
   const lenis = useLenis()
@@ -16,17 +28,18 @@ export default function Footer() {
         memberikan solusi yang dapat Anda terima.
       </p>
       <ul class="mx-auto flex">
-        <Link href="https://wa.me/628999492334">WhatsApp</Link>
-        <Link href="https://wa.me/628999492334">Instagram</Link>
-        <Link href="https://wa.me/628999492334">Email</Link>
+        <Link href="https://wa.me/6285174264123">WhatsApp</Link>
+        <Link href="https://instagram.com/icraft.ds">Instagram</Link>
+        <Link href="mailto:icraft.digitals@gmail.com">Email</Link>
       </ul>
       <div class="mx-auto text-sm">
         <p class="fw-medium">Alamat Kantor</p>
         <a
           class="underline underline-1 underline-offset-2"
-          href="https://map.com"
+          href="https://maps.app.goo.gl/k2oQJEFWfAhYGYff7"
         >
-          Jalan Cibiru Kanayakan Lama, Bogor, Dago Selatan, Jawa Barat, Indonesia
+          Jl. Mitra Sejati Raya C2 No.6, Cinunuk, Kec. Cileunyi,
+          Kab. Bandung, Jawa Barat 40624
         </a>
       </div>
       <hr class="my-4" />
